@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"regexp"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	content, err := ioutil.ReadFile("./input/day1.txt")
+	content, err := os.ReadFile("./cmd/day01/input.txt")
 
 	if err != nil {
 		fmt.Println(err)
@@ -47,5 +47,5 @@ func main() {
 		total += valueInt
 	}
 
-	fmt.Printf("Total: %d", total)
+	fmt.Printf("Part 1 Total: %d", total)
 }
