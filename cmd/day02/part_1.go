@@ -13,8 +13,8 @@ var maxCubes = map[string]int{
 	"blue":  14,
 }
 
-func main() {
-	file, err := os.ReadFile("./cmd/day02/input.txt")
+func Part_1() {
+	file, err := os.ReadFile("./input.txt")
 	if err != nil {
 		fmt.Println(err)
 		return

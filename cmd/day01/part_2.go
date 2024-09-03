@@ -20,8 +20,8 @@ var dictionary = map[string]string{
 	"nine":  "9",
 }
 
-func main() {
-	content, err := os.ReadFile("./cmd/day01/input.txt")
+func Part_2() {
+	content, err := os.ReadFile("./input.txt")
 
 	if err != nil {
 		fmt.Println(err)
